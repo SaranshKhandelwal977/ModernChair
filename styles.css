@@ -1,0 +1,222 @@
+*{
+    margin: 0 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body{
+    transition: all 2s ease 0.5s;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+button{
+    background: none;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.con{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+}
+/* .image{
+    transition: all 2s ease;
+} */
+.image1, .image2, .image3, .image4,  
+.image5, .image6{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+}
+.image1{
+    background-image: url(images/chair1.png);
+}
+.image2{
+    background-image: url(images/chair2.png);
+}   
+.image6{
+    background-image: url(images/chair3.png);
+}
+.image4{
+    background-image: url(images/chair4.png);
+}
+.image5{
+    background-image: url(images/chair5.png);
+}
+.image3{
+    background-image: url(images/chair6.png);
+}
+.data{
+    width: 35%;
+}
+.amount{
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.discounted{
+    font-size:0.9rem;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+.desc{
+    font-size:larger;
+}
+.desc, .details{
+    margin: 1rem 0 0.6rem;
+    font-weight: 800;
+}
+.desc-data, .details-data{
+    transition: all 2s ease;
+}
+.details{
+    opacity: 0.8;
+}
+.details-data{
+    display: none;
+}
+.detailCon{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 70%;
+    font-size: large;
+}
+.fig{
+    font-size: 1.9rem;
+}
+.innerDetails{
+    width: 100px;
+}
+.chooseColor{
+    font-weight:600;
+    margin: 0.8rem 0 0;
+}
+.btncon{
+    display: flex;
+    gap: 0.6rem;
+    overflow: hidden;
+    padding: 1rem 0.8rem;
+}
+.colors{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    overflow-y: hidden;
+    box-shadow: 0 0 10px black;
+    border-radius: 6px;
+}
+.selected {
+    border: 2px solid rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.bg1{
+background-color: rgb(227, 125, 159);
+}
+.bg2{
+background-color: darkslategrey;
+}
+.bg3{
+    background-color: grey;
+}
+.bg4{
+background-color: cadetblue;
+}
+.bg5{
+background-color: #9F8C76;
+}  
+.bg6{
+    background-color:rgb(101, 143, 227);
+}
+
+.addToCart{
+    padding: 1rem 1.3rem;
+    background: rgb(227, 75, 126);
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: all 2s ease;
+    font-size: medium;
+}
+
+.addToCartbtn1{
+    background: rgb(227, 75, 126);
+}
+.addToCartbtn2{
+    background: rgb(6, 31, 31);
+}
+.addToCartbtn3{
+    background: rgb(78, 78, 78);
+}
+.addToCartbtn4{
+    background: rgb(21, 135, 138);
+}
+.addToCartbtn5{
+    background: #55493b;
+}
+.addToCartbtn6{
+    background: rgb(51, 84, 150);
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        overflow-y: auto;
+    }
+    .con{
+        height: 100%;
+        flex-direction: column;
+        overflow-y: hidden;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    .data{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .btncon{
+        align-items: center;
+        justify-content: center;
+    }
+    .detailCon{
+        margin: auto;
+    }
+    .desc-data{
+        width: 60%;
+        margin: auto;
+    }
+    .image1, .image2, .image3, .image4,  
+    .image5, .image6{
+        height: 480px;
+    }
+}
+@media screen and (max-width: 780px){
+    .desc-data{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .desc-data{
+        width: 90%;
+        margin: auto;
+    }
+    .image1, .image2, .image3, .image4,  
+    .image5, .image6{
+        /* width: 400px; */
+        margin-left: -100px;
+    }
+}
